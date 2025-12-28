@@ -380,7 +380,7 @@ out.ife.p <- fect(formula = cases ~ D + t2m + tp + forest,
                   CV = 0,
                   r = 2,
                   se = TRUE,
-                  nboots = 1500,
+                  nboots = 2500,
                   W = "weight",
                   placeboTest = TRUE , placebo.period = c(-6, 0))
 
@@ -401,7 +401,7 @@ out.ife.loo <- fect(cases ~ D + t2m + tp + forest,
                     force = "two-way", 
                     se = TRUE, 
                     parallel = TRUE, 
-                    nboots = 1500, 
+                    nboots = 2500, 
                     W = "weight",
                     loo = TRUE)
 
